@@ -32,6 +32,10 @@ header{
 }
 
 /* main */
+body{
+        padding:0px;
+        background-color: $section-background-color;
+    }
 .sectionhome{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -73,18 +77,30 @@ h2{
             color: $h1-h3-color;
             font-family: sans-serif, fira sans, heebo;
     }
+    #divlomejorparavos{
+            width:120%;
+            margin-right: $main-px-prom;
+    }
     #cartafilosofia{
             display:flex;
             flex-flow: row wrap;
             justify-content: space-between;
             align-content: center;
             .card2{
-                    width:30%;
+                    width:32%;
                     margin: 0px;
-                    height: 90%;
+                    height: $main-px-prom*2.5;
+                    margin-bottom: 20px;
+                    .card-body2{
+                        display:grid;
+                        grid-template-rows: 1fr, 3fr;
+                    }
             }
     }
 }
+.card{
+        background-color: $section-background-color;   
+    }
 
 /* nuestro equipo */
 #grid{
@@ -101,6 +117,12 @@ h2{
             .card-img-top{
                     height: $main-px-prom*2;
                     width: $main-px-prom*2;
+            }
+            .card-title{
+                    text-align: center;
+            }
+            .card-text{
+                    text-align: center;
             }
     }
 }
@@ -159,10 +181,7 @@ form{
             border:solid 1px $color-green;
     }
 }
-.section{
-    padding:0px;
-    background-color: $section-background-color;
-}
+
 
 /* footer */
 footer{
