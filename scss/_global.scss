@@ -1,217 +1,217 @@
 *{
-    margin: 0px;
-    padding-left: 0px;
+        margin: 0px;
+        padding-left: 0px;
 }
 /* header */
 header{
-    background-color: $header-background-color;
-    padding-bottom: $header-px-prom/10;
-    border-bottom:solid $header-px-prom*0.25 $section-border-color;
-    img{
-            width: $header-px-prom*4.5;
-            height: $header-px-prom*4.5;
-            border-right: solid 3px $regular-border-color;
-            display: inline;
-            float: left;
-    }
-    .navbar{
-            display: flex;
-            flex-flow: row nowrap;
-            #enlace:hover{
-                    color: $color-enlace-primario;
-            }
-    }
-    .navbar-nav{
-            display:grid;
-            grid-template-columns: $header-px-prom*5 $header-px-prom*7.5 $header-px-prom*5 $header-px-prom*5 $header-px-prom*5 $header-px-prom*5;
-            grid-template-rows: $header-px-prom/2;
-            padding-bottom: $header-px-prom*2.5;
-            justify-items: center;
-            align-items: start;
-    }
+        background-color: $header-background-color;
+        padding-bottom: $header-px-prom/10;
+        border-bottom:solid $header-px-prom*0.25 $section-border-color;
+        img{
+                width: $header-px-prom*4.5;
+                height: $header-px-prom*4.5;
+                border-right: solid 3px $regular-border-color;
+                display: inline;
+                float: left;
+        }
+.navbar{
+        display: flex;
+        flex-flow: row nowrap;
+        #enlace:hover{
+                color: $color-enlace-primario;
+        }
+}
+.navbar-nav{
+        display:grid;
+        grid-template-columns: $header-px-prom*5 $header-px-prom*7.5 $header-px-prom*5 $header-px-prom*5 $header-px-prom*5 $header-px-prom*5;
+        grid-template-rows: $header-px-prom/2;
+        padding-bottom: $header-px-prom*2.5;
+        justify-items: center;
+        align-items: start;
+        }
 }
 
 /* main */
 body{
         padding:0px;
         background-color: $section-background-color;
-    }
+}
 .sectionhome{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows:$main-px-prom*6;
-    justify-items: stretch;
-    align-items: center;
-    padding-left:0px;
-    padding-top:$main-px-prom*1.2;
-    
-    h1{
-            color: $h1-h3-color;
-            font-family: castoro, fira sans, sans-serif;
-            word-spacing:7px;
-            font-size: 3rem;
-    }
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows:$main-px-prom*6;
+        justify-items: stretch;
+        align-items: center;
+        padding-left:0px;
+        padding-top:$main-px-prom*1.2;
+
+h1{
+        color: $h1-h3-color;
+        font-family: castoro, fira sans, sans-serif;
+        word-spacing:7px;
+        font-size: 3rem;
+}
 
 }
 h2{
-    text-align: justify;
-    margin-bottom: 0.625rem;
-    font-family: heebo, fira sans, sans-serif;
-    color: $h2-color;
-    #unica{
-            text-align: left;
-            color: $h1-h3-color;
-            margin-bottom: 0px;
-            padding-bottom: 0.625rem;
-            font-family: castoro, fira sans, sans-serif;
-    }
+        text-align: justify;
+        margin-bottom: 0.625rem;
+        font-family: heebo, fira sans, sans-serif;
+        color: $h2-color;
+        #unica{
+                text-align: left;
+                color: $h1-h3-color;
+                margin-bottom: 0px;
+                padding-bottom: 0.625rem;
+                font-family: castoro, fira sans, sans-serif;
+        }
 }
 
 /* sobre nosotros*/
 .divsobrenosotros{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    h3{
-            margin-bottom: 1.25rem;
-            color: $h1-h3-color;
-            font-family: sans-serif, fira sans, heebo;
-    }
-    #divlomejorparavos{
-            width:100%;
-            margin-right: $main-px-prom;
-    }
-    #cartafilosofia{
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            align-content: center;
-            .card2{
-                    width:32%;
-                    margin: 0px;
-                    height: $main-px-prom*2.5;
-                    margin-bottom: 20px;
-                    .card-body2{
-                        display:grid;
-                        grid-template-rows: 1fr, 3fr;
-                    }
-            }
-    }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        h3{
+                margin-bottom: 1.25rem;
+                color: $h1-h3-color;
+                font-family: sans-serif, fira sans, heebo;
+        }
+        #divlomejorparavos{
+                width:100%;
+                margin-right: $main-px-prom;
+        }
+        #cartafilosofia{
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-content: center;
+                .card2{
+                        width:32%;
+                        margin: 0px;
+                        height: $main-px-prom*2.5;
+                        margin-bottom: 20px;
+                        .card-body2{
+                                display:grid;
+                                grid-template-rows: 1fr, 3fr;
+                        }
+                }
+        }
 }
 .card{
         background-color: $section-background-color;   
-    }
+}
 
 /* nuestro equipo */
 #grid{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    .card1{
-            width: $main-px-prom*2.5;
-            .card-body{
-                    border: none;
-                    width: 100%;
-            }
-            .card-img-top{
-                    height: $main-px-prom*2;
-                    width: $main-px-prom*2;
-            }
-            .card-title{
-                    text-align: center;
-            }
-            .card-text{
-                    text-align: center;
-            }
-    }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        .card1{
+                width: $main-px-prom*2.5;
+                .card-body{
+                        border: none;
+                        width: 100%;
+        height: 100%;
+                }
+                .card-img-top{
+                        height: $main-px-prom*2;
+                        width: $main-px-prom*2;
+                }
+                .card-title{
+                        text-align: center;
+                }
+                .card-text{
+                        text-align: center;
+                }
+        }
 }
 
 /* jurisdiccion */
 #grillajuris{
-    display:grid;
-    grid-template-columns: repeat(3, 20fr);
-    grid-template-rows: repeat(2, $main-px-prom*2.5);
-    justify-items: stretch;
-    align-items: stretch;
-    grid-column-gap: $main-px-prom/10;
-    grid-row-gap: $main-px-prom/5;
-    border: none;
-    padding-top: $main-px-prom/2;
-    padding-bottom: 70px;
-    .card-img{
-            height: $main-px-prom*2.5;
-    }
-    .card:hover{
-            transform: scale(1.05); 
-    }
+        display:grid;
+        grid-template-columns: repeat(3, 20fr);
+        grid-template-rows: repeat(2, $main-px-prom*2.5);
+        justify-items: stretch;
+        align-items: stretch;
+        grid-column-gap: $main-px-prom/10;
+        grid-row-gap: $main-px-prom/5;
+        border: none;
+        padding-top: $main-px-prom/2;
+        padding-bottom: 70px;
+        .card-img{
+                height: $main-px-prom*2.5;
+        }
+        .card:hover{
+                transform: scale(1.05); 
+        }
 }
 
 /* galeria */
 .galerias{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items:stretch;
-    padding-bottom: 1.5rem;
-    .galerias__fotos{
-            height:$main-px-prom*1.5;
-            width: $main-px-prom*1.5;
-    } 
-    .galerias__fotos:hover{
-            transform:scale(1.2);
-    }
+        display: flex;
+        flex-flow: row nowrap;
+        align-items:stretch;
+        padding-bottom: 1.5rem;
+        .galerias__fotos{
+                height:$main-px-prom*1.5;
+                width: $main-px-prom*1.5;
+        } 
+        .galerias__fotos:hover{
+                transform:scale(1.2);
+        }
 }
 
 /* contacto */
 form{
-    color: $color-black;
-    width: 75%;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    label{
-            display: block;
-    }
-    .btn{
-            display: block;
-            color: $color-green;
-            border:solid 1px $color-green
-    }
-    .btn:hover{
-            background-color: $color-green;
-            border:solid 1px $color-green;
-    }
+        color: $color-black;
+        width: 75%;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        label{
+                display: block;
+        }
+        .btn{
+                display: block;
+                color: $color-green;
+                border:solid 1px $color-green
+        }
+        .btn:hover{
+                background-color: $color-green;
+                border:solid 1px $color-green;
+        }
 }
 
 
 /* footer */
 footer{
-    background-image: linear-gradient($color-darkolivegreen, $color-black);
-    border-top:solid 5px $section-border-color;
-    p{
-            color: $color-lightgray;
-            text-align: center;
-            line-height: 25px;
-            i{
-                    margin-right: 0.3125rem;
-                    margin-left: 0.125rem;
-                    color: $color-black;
-            }
-            a{
-                    i:hover{
-                    color: $color-enlace-footer;
-                    }
-            }
-
-    }
-    div{
-            p{
-                    text-align: left;
-            }   
-    }
-    h2{
-            color: $color-lightgray;
-            text-align: start;
-            font-family: fira sans, sans serif, heebo;
-            padding-top: 1.25rem;
-    }
+        background-image: linear-gradient($color-darkolivegreen, $color-black);
+        border-top:solid 5px $section-border-color;
+        p{
+                color: $color-lightgray;
+                text-align: center;
+                line-height: 25px;
+                i{
+                        margin-right: 0.3125rem;
+                        margin-left: 0.125rem;
+                        color: $color-black;
+                }
+                a{
+                        i:hover{
+                        color: $color-enlace-footer;
+                        }
+                }
+        }
+        div{
+                p{
+                        text-align: left;
+                }   
+        }
+        h2{
+                color: $color-lightgray;
+                text-align: start;
+                font-family: fira sans, sans serif, heebo;
+                padding-top: 1.25rem;
+        }
 }
