@@ -36,6 +36,15 @@ body{
         padding:0px;
         background-color: $section-background-color;
 }
+.inter_seccion{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: $main-px-prom;
+        .inter_seccion_border{
+                border-bottom: 2px solid greenyellow;
+        }
+}
 .sectionhome{
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -124,21 +133,23 @@ h2{
         }
 }
 .card{
-        background-color: $section-background-color;   
+        background-color: $section-background-color;
 }
 
 /* nuestro equipo */
-#grid{
+#flex_equipo{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: stretch;
+        padding-top: 50px;
         .card1{
                 width: $main-px-prom*2.5;
+                border: 1px solid $section-background-color;
                 .card-body{
                         border: none;
                         width: 100%;
-        height: 100%;
+                        height: 100%;
                 }
                 .card-img-top{
                         height: $main-px-prom*2;
@@ -150,6 +161,9 @@ h2{
                 .card-text{
                         text-align: center;
                 }
+        }
+        .card1:hover{
+                border: 1px solid olivedrab
         }
 }
 
@@ -165,8 +179,11 @@ h2{
         border: none;
         padding-top: $main-px-prom/2;
         padding-bottom: 70px;
-        .card-img{
-                height: $main-px-prom*2.5;
+        .carta_jurisdiccion{
+                border: none;
+                .card-img{
+                        height: $main-px-prom*2.5;
+                }
         }
         .card:hover{
                 transform: scale(1.05); 
