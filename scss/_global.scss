@@ -151,10 +151,6 @@ h2{
                         width: 100%;
                         height: 100%;
                 }
-                .card-img-top{
-                        height: $main-px-prom*2;
-                        width: $main-px-prom*2;
-                }
                 .card-title{
                         text-align: center;
                 }
@@ -183,6 +179,16 @@ h2{
                 border: none;
                 .card-img{
                         height: $main-px-prom*2.5;
+                }
+                .div-transparente{
+                        background-color: white;
+                        opacity: 65%;
+                        margin: 25px;
+                        .card-text{
+                                text-align: center;
+                                color:black;
+                                font-weight: bold;
+                        }
                 }
         }
         .card:hover{
