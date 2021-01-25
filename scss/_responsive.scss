@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px) and (max-width: 480px)
+@media only screen and (min-width: 320px) and (max-width: 479px)
 {
     /* global */
     h2{
@@ -65,6 +65,9 @@
         h1{
             font-size:45px;
         }
+        .d-block{
+            height: 100%;
+        }
     }
 
     /* sobrenosotros */
@@ -115,9 +118,13 @@
         grid-template-rows: repeat(3, 1fr);
         justify-content: stretch;
         align-items: stretch;
+        padding:10px;
         .galerias__fotos{
             height: 100px;
             width: 100px; 
+        }
+        galerias__fotos:hover{
+            transform:scale(0)
         }
     }
 
@@ -129,7 +136,7 @@
 
 
 
-@media only screen and (min-width: 480px) and (max-width: 768px)
+@media only screen and (min-width: 480px) and (max-width: 767px)
 {
     /* global */
     h2{
@@ -181,8 +188,10 @@
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: start;
-        padding-bottom:0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         text-align: center;
+
         h1{
             font-size:45px;
         }
@@ -235,7 +244,7 @@
     .galerias{
         display:grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         justify-content: stretch;
         align-items: stretch;
         .galerias__fotos{
@@ -244,9 +253,76 @@
         }
     }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1100px)
+    /*contacto*/
+    #textolargo{
+        width:100%;
+    }
+@media only screen and (min-width: 768px) and (max-width:1023px)
 {
+    /* global */
+    h2{
+        font-size:30px;
+        #unica{
+            font-size:20px;
+            text-align: center;
+        }
+    }
+    h3{
+        font-size:23px;
+    }
+    h4{
+        font-size:20px
+    }
+    p{
+        font-size:15px;
+    }
+    header{
+        .navbar-nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 500px;
+        margin:0px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+        .navbar-brand{
+            display:none;
+        }
+    }
+
+    /*sobre nosotros*/
+
+    .divsobrenosotros{
+        display: flex;
+        flex-flow: row wrap;
+    #divlomejorparavos{
+        margin-right: 0px;
+        width:100%;
+    }
+    #cartafilosofia{
+        width:100%;
+    }
+    }
+
+    /*Jurisdiccion*/
+    #grillajuris{
+        .carta_jurisdiccion{
+            .div-transparente{
+                margin: 5px;
+            }
+        }
+    }
+
+    /*galeria*/
+    .galerias{
+        width: 630px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1100px)
+{
+
     #cartafilosofia{
         display:grid;
         grid-template-columns: repeat(2, 1fr);

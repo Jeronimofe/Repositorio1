@@ -125,7 +125,7 @@ h2{
                 .card2:hover{
                         .card-header-sobrenosotros{
                                 .icons-nosotros{
-                                        color:greenyellow;
+                                        color: $card-filosofia-color;
                                 }
                         }
                 }
@@ -197,11 +197,14 @@ h2{
 }
 
 /* galeria */
+.parrafo-galeria{
+        color: $h1-h3-color;
+        font-size: 15px;
+        font-family: sans-serif, fira sans, heebo;
+}
 .galerias{
         display: flex;
-        flex-flow: row nowrap;
-        align-items:stretch;
-        padding-bottom: 1.5rem;
+        flex-flow: row wrap;
         .galerias__fotos{
                 height:$main-px-prom*1.5;
                 width: $main-px-prom*1.5;
